@@ -111,7 +111,7 @@ class Blockchain(object):
         """
         guess = f'{block_string}{proof}'.encode()
         guess_hash = hashlib.sha256(guess).hexdigest()
-        # return True or False
+        # return True or  False
         return guess_hash[:3] == "000"
 
 
